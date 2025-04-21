@@ -1,0 +1,86 @@
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    background-color: #11241F;
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Circular", sans-serif;
+    color: #fff;
+  }
+  
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #D5687A;
+    margin-bottom: 32px;
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .navSection {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .navItem {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .navItem:hover {
+    background-color: #181818;
+  }
+  
+  .active {
+    background-color: #fceef2;
+    color: black;
+  }
+  
+  .divider {
+    border: none;
+    height: 1px;
+    background-color: #333;
+    margin: 20px 0;
+  }
+  
+  .playlistHeader {
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 12px;
+  }
+  
+  .playlists {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  
+  .playlistItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    padding: 6px 4px;
+    border-radius: 6px;
+    transition: background 0.2s;
+  }
+  
+  .playlistItem:hover {
+    background-color: #181818;
+  }
+  
