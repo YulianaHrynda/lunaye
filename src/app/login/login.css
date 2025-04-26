@@ -1,0 +1,132 @@
+/* src/app/login/login.css */
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url('/intro/Rectangle.png') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .login-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: rgba(229, 218, 210, 0.36);
+  }
+  
+  .login-card {
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 4rem; /* bigger padding */
+    border-radius: 1.5rem;
+    max-width: 600px; /* bigger width */
+    width: 100%;
+    text-align: center;
+  }
+  
+  .login-heading {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #E5DAD2;
+  }
+  
+  .subtitle {
+    color: #E5DAD2;
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.8rem;
+  }
+  
+  .form-group {
+    width: 100%;
+    max-width: 500px; /* bigger input container */
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    color: #ccc;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .input {
+    background: transparent;
+    border: 1px solid #ccc;
+    border-radius: 0.75rem;
+    padding: 1rem 1.25rem; /* bigger inside padding */
+    width: 100%;
+    color: white;
+    font-size: 1.1rem;
+    transition: border-color 0.3s;
+  }
+  
+  .input:focus {
+    border-color: #D5687A;
+    outline: none;
+  }
+  
+  .options {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 500px;
+    font-size: 1rem;
+    color: #ccc;
+  }
+  
+  .options input[type="checkbox"] {
+    accent-color: #D5687A;
+  }
+  
+  .remember {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    border-radius: 0.75rem;
+    background-color: #D5687A;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  .submit-button:hover {
+    background-color: #c2576c;
+  }
+  
+  .bottom-text {
+    font-size: 1rem;
+    margin-top: 2rem;
+    color: #aaa;
+  }
+  
+  .link {
+    color: #D5687A;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  

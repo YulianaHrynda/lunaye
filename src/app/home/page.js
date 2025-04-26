@@ -1,7 +1,7 @@
-import FeaturedPlaylists from './components/FeaturedPlaylists';
-import RecentlyPlayed from './components/RecentlyPlayed';
-import ArtistSuggestions from './components/ArtistSuggestions';
-import PlayerBar from './components/PlayerBar';
+import FeaturedPlaylists from '../components/FeaturedPlaylists';
+import RecentlyPlayed from '../components/RecentlyPlayed';
+import ArtistSuggestions from '../components/ArtistSuggestions';
+import PlayerBar from '../components/PlayerBar';
 
 export default function Page() {
   return (
