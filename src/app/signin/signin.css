@@ -1,0 +1,158 @@
+/* src/app/signin/signin.css */
+
+/* Base container */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  background: url('/intro/Rectangle.png') no-repeat center center fixed;
+  background-size: cover;
+  background-color: #11241F; /* fallback background color */
+  overflow: hidden;
+}
+
+/* Page title (Lunaye) */
+.login-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: rgba(229, 218, 210, 0.36);
+}
+
+/* Form card */
+.login-card {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 4rem;
+  border-radius: 1.5rem;
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Heading inside the card */
+.login-heading {
+  font-family: 'Inter', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #E5DAD2;
+}
+
+/* Subtitle under heading */
+.subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  color: #E5DAD2;
+}
+
+/* Whole form */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+/* Single input group */
+.form-group {
+  width: 100%;
+  max-width: 500px;
+  text-align: left;
+}
+
+/* Label for inputs */
+.form-group label {
+  display: block;
+  color: #ccc;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Input field */
+.input {
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  width: 100%;
+  color: white;
+  font-size: 1.1rem;
+  transition: border-color 0.3s;
+  font-family: 'Inter', sans-serif;
+}
+
+.input:focus {
+  border-color: #D5687A;
+  outline: none;
+}
+
+/* Options like Remember me */
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 500px;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Remember me checkbox */
+.options input[type="checkbox"] {
+  accent-color: #D5687A;
+}
+
+/* Remember me label */
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Submit Button */
+.submit-button {
+  width: 100%; /* same width as inputs */
+  max-width: 500px;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #D5687A;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  height: 56px;
+  font-family: 'Inter', sans-serif;
+}
+
+.submit-button:hover {
+  background-color: #c2576c;
+}
+
+/* Bottom text below the form */
+.bottom-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  margin-top: 2rem;
+  color: #aaa;
+}
+
+/* Link (Sign in, Sign up) */
+.link {
+  color: #D5687A;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'Inter', sans-serif;
+}
+
+.link:hover {
+  text-decoration: underline;
+}

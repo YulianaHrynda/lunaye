@@ -10,11 +10,11 @@ export default function IntroPage() {
     <div className="landing-container">
       <h1>Lunaye</h1>
       <div>
-        <button onClick={() => router.push('/login')} className="button">
-          Log In
-        </button>
         <button onClick={() => router.push('/signup')} className="button">
           Sign Up
+        </button>
+        <button onClick={() => router.push('/signin')} className="button">
+          Sign In
         </button>
       </div>
     </div>

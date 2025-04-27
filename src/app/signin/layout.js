@@ -1,6 +1,6 @@
 import '../globals.css';
 
-export default function LoginLayout({ children }) {
+export default function SignUpLayout({ children }) {
     return (
       <html lang="en">
         <body>
