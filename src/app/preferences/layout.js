@@ -1,6 +1,5 @@
-import '../globals.css';
-
-export default function SignInLayout({ children }) {
+// src/app/preferences/layout.js
+export default function Layout({ children }) {
     return (
       <html lang="en">
         <body>

@@ -1,29 +1,48 @@
 /* src/app/intro/intro.css */
 
-/* Body setup */
+/* Reset body */
 body {
     margin: 0;
     padding: 0;
-    background: url('../../../public/intro/Rectangle.png') no-repeat center center fixed;
-    background-size: cover;
     font-family: 'Inter', sans-serif;
+    background-color: black;
     color: white;
+    overflow: hidden;
   }
   
-  /* Center container */
+  /* Page wrapper (optional but cleaner) */
+  .intro-page-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Background Video */
+  .background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  /* Main centered container */
   .landing-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
     padding: 2rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4); /* Optional darker overlay */
     border-radius: 1rem;
   }
   
-  /* Heading */
+  /* Title */
   .landing-container h1 {
     font-size: 4rem;
     font-weight: bold;

@@ -1,31 +1,45 @@
+/* src/app/signup/signup.css */
+
+/* Import font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
-.login-container {
-    position: fixed; /* <- fix the whole container to screen */
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: url('/intro/Rectangle.png') no-repeat center center fixed;
-    background-size: cover;
-    background-color: #11241F;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Inter', sans-serif;
-    overflow: hidden;
-    z-index: 1; /* make sure it covers everything */
-  }
-  
+/* Global page setup */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: 'Inter', sans-serif;
+  background: url('/intro/Rectangle.png') no-repeat center center fixed;
+  background-size: cover;
+  background-color: #11241F; /* fallback */
+  scroll-behavior: smooth;
+  color: white;
+}
 
+/* Base container */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 4rem 2rem;
+  box-sizing: border-box;
+}
+
+/* Page title (Lunaye) */
 .login-title {
   font-size: 2.8rem;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 2rem;
   color: rgba(229, 218, 210, 0.36);
 }
 
+/* Form card */
 .login-card {
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(10px);
@@ -33,7 +47,6 @@
   padding: 4rem;
   border-radius: 1.5rem;
   max-width: 700px;
-  max-height: 800px;
   width: 100%;
   text-align: center;
   box-sizing: border-box;
@@ -42,13 +55,15 @@
   align-items: center;
 }
 
+/* Card heading */
 .login-heading {
   font-size: 2.2rem;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 0.5rem;
   color: #E5DAD2;
 }
 
+/* Card subtitle */
 .subtitle {
   font-size: 1.1rem;
   font-weight: 300;
@@ -56,20 +71,23 @@
   color: #E5DAD2;
 }
 
+/* Form */
 .form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1.8rem;
   width: 100%;
   max-width: 500px;
-  gap: 1.8rem;
 }
 
+/* Input group */
 .form-group {
   width: 100%;
   text-align: left;
 }
 
+/* Labels */
 .form-group label {
   display: block;
   color: #ccc;
@@ -77,6 +95,7 @@
   margin-bottom: 0.5rem;
 }
 
+/* Input fields */
 .input {
   background: transparent;
   border: 1px solid #ccc;
@@ -93,6 +112,7 @@
   outline: none;
 }
 
+/* Submit Button */
 .submit-button {
   margin-top: 1rem;
   width: 100%;
@@ -103,21 +123,24 @@
   font-weight: bold;
   transition: background-color 0.3s ease;
   height: 56px;
+  max-width: 500px;
 }
 
 .submit-button:hover {
   background-color: #c2576c;
 }
 
+/* Bottom text */
 .bottom-text {
   font-size: 1rem;
   margin-top: 2rem;
   color: #aaa;
   width: 100%;
-  max-width: 500px; /* SAME AS FORM */
+  max-width: 500px;
   text-align: center;
 }
 
+/* Links */
 .link {
   color: #D5687A;
   cursor: pointer;
@@ -127,3 +150,10 @@
 .link:hover {
   text-decoration: underline;
 }
+
+.error {
+    color: #D5687A;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+  
