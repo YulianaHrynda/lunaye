@@ -1,0 +1,111 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .title {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .subtitle {
+    font-size: 16px;
+    color: #ccc;
+  }
+  
+  .buttonGroup {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .activeButton {
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .inactiveButton {
+    background: transparent;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: transparent;
+    color: white;
+  }
+  
+  .resultsTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 24px;
+  }
+  
+  .resultsTable {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 16px;
+  }
+  
+  .resultsHeader, .resultsRow {
+    display: grid;
+    grid-template-columns: 40px 1fr 1fr 60px;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .songInfo {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .songInfo p {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .songInfo small {
+    color: #aaa;
+  }
+  
+  .createButton {
+    margin-top: 24px;
+    padding: 14px 24px;
+    background-color: #d5687a;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .createButton:hover {
+    background-color: #d5687a;
+  }
+  
