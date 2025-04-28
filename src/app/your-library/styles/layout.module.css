@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    height: calc(100% - 80px);
+  }
+
+  .main {
+    flex: 1;
+    padding: 30px;
+    /* height: 100vh; */
+    margin-bottom: 200px;
+    overflow-y: auto;
+  
+    background-image: url('/backgrounds/dashboard-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .main::-webkit-scrollbar {
+    display: none;
+  }
+  
