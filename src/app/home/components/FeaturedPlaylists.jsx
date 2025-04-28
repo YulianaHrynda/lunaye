@@ -46,10 +46,10 @@ export default function FeaturedPlaylists() {
     <div className={styles.wrapper}>
       <div className={styles.headingRow}>
         <h3 className={styles.heading}>Featured Playlists</h3>
-        <div className={styles.arrows}>
+        {/* <div className={styles.arrows}>
           <button onClick={() => scroll('left')}>&lt;</button>
           <button onClick={() => scroll('right')}>&gt;</button>
-        </div>
+        </div> */}
       </div>
 
       <div className={styles.scrollContainer} ref={scrollRef}>

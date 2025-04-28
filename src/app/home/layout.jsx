@@ -1,5 +1,4 @@
-import Sidebar from '../components/Sidebar';
-
+import Sidebar from './components/Sidebar';
 import styles from './styles/layout.module.css';
 
 export const metadata = {
