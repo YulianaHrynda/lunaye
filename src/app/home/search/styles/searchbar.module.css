@@ -1,0 +1,94 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.searchInput {
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #15231e;
+  color: #f0f0f0;
+  font-size: 16px;
+  outline: none;
+}
+
+.searchInput::placeholder {
+  color: #aaa;
+}
+
+.filterTabs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tab {
+  padding: 8px 16px;
+  background-color: #1b2b25;
+  color: #ddd;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.tab:hover {
+  background-color: #2a3e34;
+}
+
+.activeTab {
+  background-color: #4f8c82;
+  color: white;
+}
+
+.section {
+    margin-top: 40px;
+  }
+  
+  .sectionTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  .artistCard,
+  .playlistCard {
+    width: 200px;
+    height: 200px;
+    border-radius: 14px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .cardOverlay {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  }
+  
+  .cardTitle {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+  }
+  
+  .cardSubtitle {
+    font-size: 13px;
+    color: #ccc;
+    margin: 4px 0 0;
+  }
+  

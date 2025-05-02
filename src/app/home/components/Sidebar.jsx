@@ -25,7 +25,7 @@ export default function Sidebar() {
           <span>Home</span>
         </Link>
 
-        <Link href="/search" className={`${styles.navItem} ${activePage === 'search' ? styles.active : ''}`}>
+        <Link href="/home/search" className={`${styles.navItem} ${activePage === 'search' ? styles.active : ''}`}>
           <img src="/icons/search.png" alt="Search" className={styles.icon} />
           <span>Search</span>
         </Link>

@@ -1,0 +1,114 @@
+.sectionTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .section {
+    margin-top: 40px;
+  }
+  
+  /* Horizontal scrolling grid */
+  .grid {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 8px;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .grid::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Top Result */
+  .topResult {
+    margin-bottom: 40px;
+  }
+  
+  .resultCard {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .overlay {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  }
+  
+  /* Artist + Playlist cards */
+  .artistCard,
+  .playlistCard {
+    min-width: 200px;
+    height: 300px;
+    border-radius: 14px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    scroll-snap-align: start;
+  }
+  
+  .cardOverlay {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  }
+  
+  .cardTitle {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+  }
+  
+  .cardSubtitle {
+    font-size: 13px;
+    color: #ccc;
+    margin: 4px 0 0;
+  }
+  
+  /* Song List Table */
+  .songSection {
+    margin-top: 24px;
+  }
+  
+  .table {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.04);
+    padding: 16px;
+    border-radius: 12px;
+    gap: 12px;
+  }
+  
+  .headerRow,
+  .songRow {
+    display: grid;
+    grid-template-columns: 40px 1fr 1fr 60px;
+    align-items: center;
+    gap: 16px;
+    font-size: 14px;
+  }
+  
+  .songInfo p {
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .songInfo small {
+    color: #aaa;
+  }
+  
