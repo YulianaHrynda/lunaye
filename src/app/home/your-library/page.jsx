@@ -1,5 +1,5 @@
-import Playlists from "./components/Playlists"
-import PlayerBar from "./components/PlayerBar"
+import Playlists from "../components/Playlists"
+import PlayerBar from "../components/PlayerBar"
 
 export default function Page() {
   return (
