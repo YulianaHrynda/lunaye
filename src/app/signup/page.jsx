@@ -1,6 +1,6 @@
 'use client';
 
-import './signup.css';
+import styles from './styles/signup.module.css';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
@@ -28,7 +28,7 @@ export default function SignUpPage() {
     e.preventDefault();
     const validationErrors = validateFields();
     if (Object.keys(validationErrors).length === 0) {
-      router.push('/preferences'); // or wherever you want to go
+      router.push('/preferences');
     } else {
       setErrors(validationErrors);
     }
@@ -45,64 +45,64 @@ export default function SignUpPage() {
   };
 
   return (
-    <div className="login-container">
-      <h1 className="login-title">Lunaye</h1>
-      <div className="login-card">
-        <h2 className="login-heading">Create Account</h2>
-        <p className="subtitle">Start your musical journey</p>
+    <div className={styles.loginContainer}>
+      <h1 className={styles.loginTitle}>Lunaye</h1>
+      <div className={styles.loginCard}>
+        <h2 className={styles.loginHeading}>Create Account</h2>
+        <p className={styles.subtitle}>Start your musical journey</p>
 
-        <form className="form" onSubmit={handleSubmit}>
-          <div className="form-group">
+        <form className={styles.form} onSubmit={handleSubmit}>
+          <div className={styles.formGroup}>
             <label>Name</label>
             <input 
               type="text" 
               placeholder="Joe Doe" 
-              className="input"
+              className={styles.input}
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
-            {errors.name && <p className="error">{errors.name}</p>}
+            {errors.name && <p className={styles.error}>{errors.name}</p>}
           </div>
 
-          <div className="form-group">
+          <div className={styles.formGroup}>
             <label>Email</label>
             <input 
               type="email" 
               placeholder="name@example.com" 
-              className="input"
+              className={styles.input}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
-            {errors.email && <p className="error">{errors.email}</p>}
+            {errors.email && <p className={styles.error}>{errors.email}</p>}
           </div>
 
-          <div className="form-group">
+          <div className={styles.formGroup}>
             <label>Password</label>
             <input 
               type="password" 
               placeholder="Password" 
-              className="input"
+              className={styles.input}
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
-            {errors.password && <p className="error">{errors.password}</p>}
+            {errors.password && <p className={styles.error}>{errors.password}</p>}
           </div>
 
-          <div className="form-group">
+          <div className={styles.formGroup}>
             <label>Confirm password</label>
             <input 
               type="password" 
               placeholder="Confirm Password" 
-              className="input"
+              className={styles.input}
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
             />
-            {errors.confirmPassword && <p className="error">{errors.confirmPassword}</p>}
+            {errors.confirmPassword && <p className={styles.error}>{errors.confirmPassword}</p>}
           </div>
 
           <button 
             type="submit" 
-            className="submit-button" 
+            className={styles.submitButton} 
             disabled={!isFormValid()}
             style={{ opacity: isFormValid() ? 1 : 0.5, cursor: isFormValid() ? 'pointer' : 'not-allowed' }}
           >
@@ -110,9 +110,9 @@ export default function SignUpPage() {
           </button>
         </form>
 
-        <p className="bottom-text">
+        <p className={styles.bottomText}>
           Already have an account?{' '}
-          <span className="link" onClick={() => router.push('/signin')}>
+          <span className={styles.link} onClick={() => router.push('/signin')}>
             Sign in
           </span>
         </p>

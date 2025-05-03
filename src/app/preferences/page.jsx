@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import './preferences.css';
+import styles from './styles/preferences.module.css'; // Правильний імпорт модуля!
 
 export default function PreferencesPage() {
   const [step, setStep] = useState('genres');
@@ -23,45 +23,45 @@ export default function PreferencesPage() {
     if (step === 'genres') {
       setStep('artists');
     } else {
-      router.push('/home'); // or wherever your home page is
+      router.push('/home');
     }
   };
 
   return (
-    <div className="preferences-container">
-      <h1 className="title">Lunaye</h1>
-      <h2 className="heading">Set Your Preferences</h2>
-      <p className="subtitle">Tell us what you like, we’ll create a personalized experience for you</p>
+    <div className={styles.preferencesContainer}>
+      <h1 className={styles.title}>Lunaye</h1>
+      <h2 className={styles.heading}>Set Your Preferences</h2>
+      <p className={styles.subtitle}>Tell us what you like, we’ll create a personalized experience for you</p>
 
-      <div className="tabs">
+      <div className={styles.tabs}>
         <button
-          className={`tab ${step === 'genres' ? 'active' : ''}`}
+          className={`${styles.tab} ${step === 'genres' ? styles.tabActive : ''}`}
           onClick={() => setStep('genres')}
         >
           Genres
         </button>
         <button
-          className={`tab ${step === 'artists' ? 'active' : ''}`}
+          className={`${styles.tab} ${step === 'artists' ? styles.tabActive : ''}`}
           onClick={() => setStep('artists')}
         >
           Artists
         </button>
       </div>
 
-      <div className="cards-container">
+      <div className={styles.cardsContainer}>
         {(step === 'genres' ? genres : artists).map((item, index) => (
-          <div className="card" key={index}>
-            <img src="/intro/music.png" alt={item} className="card-image" />
-            <span className="card-title">{item}</span>
+          <div className={styles.card} key={index}>
+            <img src="/intro/music.png" alt={item} className={styles.cardImage} />
+            <span className={styles.cardTitle}>{item}</span>
           </div>
         ))}
       </div>
 
-      <div className="navigation-buttons">
-        <button className="back-button" onClick={handleBack}>
+      <div className={styles.navigationButtons}>
+        <button className={styles.backButton} onClick={handleBack}>
           Back
         </button>
-        <button className="next-button" onClick={handleNext}>
+        <button className={styles.nextButton} onClick={handleNext}>
           Next
         </button>
       </div>

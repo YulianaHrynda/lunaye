@@ -1,6 +1,15 @@
-/* src/app/preferences/preferences.css */
+/* src/app/preferences/preferences.module.css */
 
-.preferences-container {
+:global(body) {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #11241F;
+  color: white;
+  overflow: hidden;
+}
+
+.preferencesContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,9 +18,6 @@
   width: 100vw;
   background: url('/intro/Rectangle.png') no-repeat center center fixed;
   background-size: cover;
-  background-color: #11241F;
-  font-family: 'Inter', sans-serif;
-  overflow: hidden;
   padding: 2rem;
 }
 
@@ -52,13 +58,15 @@
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.tab.active {
+.tabActive {
   background-color: #618b83;
+  transform: scale(1.05);
 }
 
-.cards-container {
+.cardsContainer {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 1.5rem;
@@ -80,7 +88,7 @@
   position: relative;
 }
 
-.card-image {
+.cardImage {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -90,7 +98,7 @@
   opacity: 0.6;
 }
 
-.card-title {
+.cardTitle {
   position: relative;
   z-index: 1;
   font-size: 1.1rem;
@@ -98,7 +106,7 @@
   color: white;
 }
 
-.navigation-buttons {
+.navigationButtons {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -106,7 +114,7 @@
   margin-top: 2rem;
 }
 
-.back-button, .next-button {
+.backButton, .nextButton {
   padding: 0.75rem 2rem;
   font-size: 1rem;
   font-weight: bold;
@@ -115,17 +123,18 @@
   border: none;
 }
 
-.back-button {
+.backButton {
   background: transparent;
   color: #ccc;
 }
 
-.next-button {
+.nextButton {
   background: #D5687A;
   color: white;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.next-button:hover {
+.nextButton:hover {
   background: #c2576c;
+  transform: scale(1.05);
 }
