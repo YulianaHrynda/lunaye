@@ -60,6 +60,7 @@ export default function Sidebar() {
       <div className={styles.playlists}>
         {playlists.map(({ name, slug }) => (
           <Link
+            key={slug}
             href={`/home/playlists/${slug}`}
             className={`${styles.playlistItem} ${pathname.includes(slug) ? styles.active : ''}`}
           >
