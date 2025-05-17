@@ -13,6 +13,8 @@ export default function Sidebar() {
     ? 'search'
     : pathname.includes('create-playlist')
     ? 'create-playlist'
+    : pathname.includes('liked-songs')
+    ? 'liked-songs'
     : 'home';
 
   return (
@@ -42,10 +44,10 @@ export default function Sidebar() {
           <span>Create Playlist</span>
         </Link>
 
-        <div className={styles.navItem}>
+        <Link href="/home/liked-songs" className={`${styles.navItem} ${activePage === 'liked-songs' ? styles.active : ''}`}>
           <img src="/icons/heart.png" alt="Liked" className={styles.icon} />
           <span>Liked Songs</span>
-        </div>
+        </Link>
       </div>
 
       <hr className={styles.divider} />
