@@ -1,5 +1,4 @@
-/* Скидання стилів для body */
-:global(body) {
+body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
@@ -8,7 +7,6 @@
   overflow: hidden;
 }
 
-/* Основний контейнер для всієї сторінки */
 .introPageWrapper {
   position: relative;
   width: 100%;
@@ -16,7 +14,6 @@
   overflow: hidden;
 }
 
-/* Фонова відео-анімація */
 .backgroundVideo {
   position: fixed;
   top: 0;
@@ -27,7 +24,6 @@
   z-index: -1;
 }
 
-/* Центральний контейнер для контенту */
 .landingContainer {
   display: flex;
   flex-direction: column;
@@ -36,18 +32,16 @@
   min-height: 100vh;
   padding: 2rem;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.4); /* затемнення фону */
+  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 1rem;
 }
 
-/* Заголовок */
 .landingContainer h1 {
   font-size: 4rem;
   font-weight: bold;
   margin-bottom: 2rem;
 }
 
-/* Кнопки */
 .button {
   background-color: #D5687A;
   color: white;
@@ -61,8 +55,7 @@
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Анімація при наведенні */
 .button:hover {
   background-color: #c2576c;
-  transform: scale(1.05); /* Невелике збільшення */
+  transform: scale(1.05);
 }
