@@ -41,10 +41,21 @@
   }
   
   .active {
-    background-color: #282828;
+    background-color: #fbeff1;
+    border-radius: 12px;
+    font-weight: 500;
   }
-  
-  
+
+  .active .icon {
+    filter: brightness(0) saturate(100%) contrast(300%) !important;
+  }
+
+  .playlistItem.active {
+    background-color: #fceef2;
+    color: black;
+  }
+
+
   .navItem:hover {
     background-color: #181818;
   }

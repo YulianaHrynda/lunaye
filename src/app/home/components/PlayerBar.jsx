@@ -25,7 +25,9 @@ export default function PlayerBar() {
         <div className={styles.controls}>
           <button><img src="/icons/shuffle.png" alt="shuffle" /></button>
           <button><img src="/icons/prev.png" alt="previous" /></button>
-          <button className={styles.play}><img src="/icons/play.png" alt="play" /></button>
+          <button className={styles.play}>
+            <img src="/icons/play.png" alt="Play" />
+          </button>
           <button><img src="/icons/next.png" alt="next" /></button>
           <button><img src="/icons/repeat.png" alt="repeat" /></button>
         </div>

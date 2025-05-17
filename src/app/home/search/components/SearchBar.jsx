@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import styles from '../styles/searchbar.module.css';
 
-const filters = ['All', 'Songs', 'Artists', 'Albums', 'Playlists'];
+const filters = ['All', 'Songs', 'Artists', 'Playlists'];
 
 export default function SearchBar({ onSearch, onFilterChange }) {
   const [query, setQuery] = useState('');
